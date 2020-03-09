@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字代码演示</title>
+    <script src="./jquery-3.3.1.js"></script>
+    <script src="./textCode.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <q>测试</q>
+    <div id="textCode"></div>
+    <script>
+        (new TextCodeMore({
+            DEMO: "#textCode", // 绑定对象
+            ADDTEXT: "统帅一声令下，三军动若风发。1月4日，记者在东部战区联合作战指挥中心看到，各要素和席位值班人员严阵以待，依托信息系统等平台手段，严密监控复杂态势，稳妥高效指挥应对海空突发情况。新年伊始，东、南、西、北、中五大战区以开训即开考姿态大抓练兵备战，开展战区首长机关和直属部队军事训练考核和比武竞赛活动，大力提高战区联合作战指挥能力。天寒地冻，主战主唱，练战正酣。在北部战区机关，身穿陆军、海军、空军、火箭军各色冬季作训服的各局室人员，就新年度严密组织日常战备行动、拟制体系建设长远规划等6项重点军事任务，共同研究筹划，深入研讨攻关……新的一年里，各战区将“以联为纲”积极探索新体制下战区联合作战指挥训练体制，把体系作战、联合作战要求贯穿训练各层级。“我们的使命是聚焦对抗强敌，深化作战准备。”北部战区联指中心参谋陈心钟说，作为第一代战区人，“我们责无旁贷”。陆军：以上率下树导向，直面强敌砺精",
+            CHANGETIME: 100, // 变换速度
+            TEXTKIND: true, // true 尾部添加 false 头部添加
+            CLEARFLAG: true, // 是否清除对象中原内容
+        })).run();
+    </script>
+
+</body>
+
+</html>
